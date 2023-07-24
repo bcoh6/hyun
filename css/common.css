@@ -1,0 +1,243 @@
+/* wix-madefor-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'WixMadeforDisplay-Regular';
+  src: url('../font/wix-madefor-display-v9-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../font/playfair-display-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'PlayfairDisplay-Medium';
+  src: url('../font/playfair-display-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'PlayfairDisplay-SemiBold';
+  src: url('../font/playfair-display-v30-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('../font/playfair-display-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibm-plex-sans-kr-300 - korean_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBMPlexSansKR-Light';
+  src: url('../font/ibm-plex-sans-kr-v10-korean_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibm-plex-sans-kr-regular - korean_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('../font/ibm-plex-sans-kr-v10-korean_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* ====================================================================================================*/
+
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+ -ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+section { position: relative }
+
+
+
+
+
+ .title {  font-family: 'PlayfairDisplay-SemiBold'; }
+ .desc_title { font-family: 'WixMadeforDisplay-Regular'; }
+  p.desc { font-family: 'IBMPlexSansKR-Regular'; }
+ .button_wrap > button { font-family: 'IBMPlexSansKR-Regular'; }
+ .button_wrap > button { font-family: 'PlayfairDisplay-Medium'; }
+ a.btn { font-family: 'WixMadeforDisplay-Regular'; }
+
+
+/* ####### Desktop(start) ####### */
+	@media screen and (min-width: 1025px) {
+
+
+	 .title { display: inline-block; font-size: 2.92826vw; }
+	 .desc_wrap { padding: 3.66032vw; }
+	 .desc_title { font-size: 2.08333vw; font-family: 'WixMadeforDisplay-Regular'; }
+	 p.desc { font-size: 1.02489vw; line-height: 1.6; }
+	 a.btn { font-size: 1.317715vw; }
+
+	
+
+
+
+
+	/* footer(D_start) */
+
+	div.footer { overflow: hidden; z-index: 120; position: relative; width: 100%; height: 12.28vh; }
+
+	div.footer > div { text-align: center; border-right: 1px solid #333; background: #fff; }
+	div.footer div.logo { float:left; position: relative; width: 10%; height: 100%; }
+	div.footer div.logo > a { position: absolute; top: 40%; left: 50%; display: inline-block; width: 40%; height: 40%; transform: translate(-50%, -40%); }
+	div.footer div.logo > a img { position: relative; width: 100%; }
+	div.footer div.copy { float:left; position: relative; width: 60%; height: 100%; }
+	div.footer div.copy > p { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+	div.footer div.contact { clear: both; position: relative; display: inline-block; width: 30%; border: none; }
+	div.footer div.contact > p { display: inline-block; line-height: 12.28vh; }
+	div.footer div.contact > p + p { margin-left: 1.17130vw; }
+	div.footer div.contact > p.ph { position: relative; }
+	div.footer div.contact > p.ph::before { content: ""; display: inline-block; position: absolute; left: 10.3vw; top: 5.3vh; width: 1px; height: 0.875em; background: black; }
+
+
+
+	/* footer(D_end) */
+
+
+
+}
+
+
+
+/* ####### Desktop(end) ####### */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!##########################!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+
+
+/* ####### Tablet(start) ####### */
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	.title { display: inline-block; font-size: 3.12500vw; }
+	.desc_wrap { padding: 3.90625vw; }
+	.desc_title { font-size: 2.08333vw; }
+	 p.desc { font-size: 1.56250vw; line-height: 2; }
+
+	 a.btn { font-size: 1.82292vw; font-family: 'WixMadeforDisplay-Regular'; }
+
+
+	 .button_wrap > button { font-family: 'PlayfairDisplay-Medium'; }
+
+
+	/* footer(T_start) */
+
+	div.footer { overflow: hidden; z-index: 120; position: relative; width: 100%; height: 12.28vh; }
+
+	div.footer > div { text-align: center;  border-right: 1px solid #333; background: #fff; }
+
+	div.footer div.logo { float:left; position: relative; width: 10%; height: 100%; }
+	div.footer div.logo > a { position: absolute; left: 50%; top: 70%; width: 40%; height: 40%; transform: translate(-50%, -70%); }
+	div.footer div.logo > a img { position: relative; width: 100%; }
+
+	div.footer div.copy { float:left; position: relative; width: 45%; height: 100%; line-height: 12.28vh; }
+	div.footer div.copy > p { position: absolute; left: 50%; top: 50%; transform: translateX(-50%); width: 100%; }
+
+	div.footer div.contact { float:left; position: relative; width: 45%; height: 100%; border: none; }
+	div.footer div.contact > p { clear: both; display: inline-block;  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+	div.footer div.contact > p + p { }
+	div.footer div.contact > p.ph {  position: relative; transform: translateX(-160%); }
+	div.footer div.contact > p.ph::before { content: ""; display: inline-block; position: absolute; left: 15.5vw; top: 0.6vh; width: 1px; height: 0.875em; background: black; }
+	div.footer div.contact > p.email { position: relative; transform: translateX(-90%); white-space: nowrap;  }
+
+	/* footer(T_end) */
+
+
+	}
+
+/* ####### Tablet(end) ####### */
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!####!!!!!!!!!!!!####!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!##!!!!!!!!!!##!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!##!!!!!!!!##!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!##!!!!!!##!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!##!!!!##!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!##!##!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!##!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!##!!!!!!!!!!!!!!!!##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+
+/* ####### Mobile(start) ####### */
+	@media screen and (max-width: 767px) {
+
+
+	.title { display: inline-block; font-size: 6.25vw; }
+	.desc_wrap { }
+	.desc_title { font-size: 5vw; }
+	 p.desc { font-size: 3.75vw; line-height: 2; }
+
+	 a.btn { font-size: 4.375vw; font-family: 'WixMadeforDisplay-Regular'; }
+
+
+	 .button_wrap > button { font-family: 'PlayfairDisplay-Medium'; }
+
+
+
+	 /* footer(M_start) */
+
+	div.footer { z-index: 120; position: relative; width: 100%; height: 20vh; font-family: 'WixMadeforDisplay-Regular'; font-size: 3.75vw; }
+
+	div.footer div.logo > a { position: absolute; left: 50%; width: 10%; height: 10%; transform: translateX(-50%); }
+	div.footer div.logo > a img { position: relative; width: 100%; }
+
+	div.footer > div { text-align: center; background: #fff; }
+	div.footer > div.logo { margin-top: 2vh; }
+	div.footer > div.copy { transform: translateY(350%); }
+	div.footer > div.contact { transform: translateY(30%); }
+
+
+
+	/* footer(M_end) */
+
+
+
+
+	}
+
+/* ####### Mobile(end) ####### */
