@@ -66,7 +66,7 @@ section { position: relative }
 
 
 
- .title {  font-family: 'PlayfairDisplay-SemiBold'; }
+ .title {  font-family: 'PlayfairDisplay-SemiBold'; font-weight: normal; }
  .desc_title { font-family: 'WixMadeforDisplay-Regular'; }
   p.desc { font-family: 'IBMPlexSansKR-Regular'; }
  .button_wrap > button { font-family: 'IBMPlexSansKR-Regular'; }
@@ -82,7 +82,7 @@ section { position: relative }
 	 .desc_wrap { padding: 3.66032vw; }
 	 .desc_title { font-size: 2.08333vw; font-family: 'WixMadeforDisplay-Regular'; }
 	 p.desc { font-size: 1.02489vw; line-height: 1.6; }
-	 a.btn { font-size: 1.317715vw; }
+	 a.btn { font-size: 1.317715vw; color: #000; }
 
 	
 
@@ -148,7 +148,7 @@ section { position: relative }
 	.desc_title { font-size: 2.08333vw; }
 	 p.desc { font-size: 1.56250vw; line-height: 2; }
 
-	 a.btn { font-size: 1.82292vw; font-family: 'WixMadeforDisplay-Regular'; }
+	 a.btn { font-size: 1.82292vw; font-family: 'WixMadeforDisplay-Regular'; color: #000; }
 
 
 	 .button_wrap > button { font-family: 'PlayfairDisplay-Medium'; }
@@ -170,7 +170,7 @@ section { position: relative }
 	div.footer div.contact { float:left; position: relative; width: 45%; height: 100%; border: none; }
 	div.footer div.contact > p { clear: both; display: inline-block;  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 	div.footer div.contact > p + p { }
-	div.footer div.contact > p.ph {  position: relative; transform: translateX(-160%); }
+	div.footer div.contact > p.ph { position: relative; transform: translateX(-160%); }
 	div.footer div.contact > p.ph::before { content: ""; display: inline-block; position: absolute; left: 15.5vw; top: 0.6vh; width: 1px; height: 0.875em; background: black; }
 	div.footer div.contact > p.email { position: relative; transform: translateX(-90%); white-space: nowrap;  }
 
@@ -212,7 +212,7 @@ section { position: relative }
 	.desc_title { font-size: 5vw; }
 	 p.desc { font-size: 3.75vw; line-height: 2; }
 
-	 a.btn { font-size: 4.375vw; font-family: 'WixMadeforDisplay-Regular'; }
+	 a.btn { font-size: 4.375vw; font-family: 'WixMadeforDisplay-Regular'; color: #000; }
 
 
 	 .button_wrap > button { font-family: 'PlayfairDisplay-Medium'; }

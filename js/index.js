@@ -67,36 +67,6 @@ window.addEventListener("load", function(){
 
 
 
-// web(start)=======================================================================================================================
-	
-
-	/*const tabList = document.querySelectorAll('.web_desc_wrap .pro_btn button');
-	const contents = document.querySelectorAll('.web_desc_wrap .web_desc .web_pro')
-	let activeCont = '';
-
-	for(var i = 0; i < tabList.length; i++){
-		tabList[i].querySelector('.btn').addEventListener('click', function(e){
-		e.preventDefault();
-		for(var j = 0; j < tabList.length; j++){
-			tabList[j].classList.remove('web_pro');
-			contents[j].style.display = 'none';
-		}
-
-		this.parentNode.classList.add('web_pro');
-
-		activeCont = this.getAttribute('href');
-		document.querySelector(activeCont).style.display = 'block';
-		});
-	}*/
-
-
-
-
-
-
-// web(end)=======================================================================================================================
-
-
 		if(!isMobile){
 
 			

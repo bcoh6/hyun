@@ -6,7 +6,6 @@
 img { object-fit: cover; }
 
 
-
 /* ####### Desktop(start) ####### */
 	@media screen and (min-width: 1025px) {
 
@@ -24,7 +23,7 @@ img { object-fit: cover; }
 
 	header div.info { position: relative; padding: 3.66032vw; width: 60%; border-right: 1px solid #555; }
 	header div.info div.info_desc { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; }
-	header div.info h1 { display: inline-block; width: 10%; height: 10%;font-size: 20px;  }
+	header div.info h1 { display: inline-block; width: 10%; height: 10%;font-size: 20px; font-weight: normal; }
 	header div.info h1 img { width: 100%; }
 	header div.info div.info_desc h2.info_title { font-family: 'PlayfairDisplay-Bold'; font-size: 100px; }
 	header div.info div.info_desc p.sub_title_info { font-family: 'PlayfairDisplay-Medium'; display: inline-block; margin-right: 1.46413vw; font-size: 3.51391vw; }
@@ -34,10 +33,11 @@ img { object-fit: cover; }
 	header div.info_nav { display: inline-flex; flex-direction: column; flex-grow: 1; justify-content: space-evenly; font-family: 'PlayfairDisplay-Medium'; }
 	header div.info_nav > button { position: relative; flex: 33%; padding: 2.19619vw;  border-bottom: 1px solid #555; }
 	header div.info_nav > button:last-child { border: none; }
-	header div.info_nav > button span { position: absolute; bottom: 0; margin-bottom: 2.19619vw; display: inline-block; font-size: 2.19619vw; }
-	header div.info_nav button.info_About:hover { background: #db0000; color: #fff; }
-	header div.info_nav button.info_Works:hover { background: #001daf; color: #fff; }
-	header div.info_nav button.info_Detail:hover { background: #ffce00; color: #fff; }
+	header div.info_nav > button span { position: absolute; bottom: 0; margin-bottom: 2.19619vw; display: inline-block; font-size: 2.19619vw; color: #000; }
+	header div.info_nav > button:hover span { color: #fff; }
+	header div.info_nav button.info_About:hover { background: #db0000; }
+	header div.info_nav button.info_Works:hover { background: #001daf; }
+	header div.info_nav button.info_Detail:hover { background: #ffce00; }
 
 
 	/* header(D_end) */
@@ -53,15 +53,13 @@ img { object-fit: cover; }
 	nav ul li.menu { width: 20%; }
 	nav ul li:last-child { border: none; }
 	nav ul li button { display: block; width: 100%; height: 100%; line-height: 12.28vh; text-align: center; }
-	nav ul li button span { font-size: 3.38542vh; }
+	nav ul li button span { font-size: 3.38542vh; color: #000; }
+	nav ul li button.active span { color: white; }
 
-	nav ul li.logo:hover button { background: #ddd; }
-	nav ul li.About:hover button { background: #ddd; }
-	nav ul li.Work:hover button { background: #ddd; }
-	nav ul li.Detail:hover button { background: #ddd; }
-	nav ul li.About button.active { background: red; color: white; }
-	nav ul li.Work button.active { background: #001daf; color: white; }
-	nav ul li.Detail button.active { background: #ffce00; color: white; }
+	nav ul li:hover button { background: #ddd; }
+	nav ul li.About button.active { background: red; }
+	nav ul li.Work button.active { background: #001daf; }
+	nav ul li.Detail button.active { background: #ffce00; }
 
 
 	/* nav(D_end) */
@@ -120,21 +118,21 @@ img { object-fit: cover; }
 	
 	section.web div.web_desc_wrap { overflow: hidden; position: relative; width: 40%; height: 100%; }
 	section.web div.web_desc_wrap div.web_desc { display: block; width: 100%; height: 50%; }
-	section.web div.web_desc div.web_pro { position: absolute; z-index: 1; display: block; width: 100%; }
+	section.web div.web_desc div.web_pro { position: absolute; z-index: 1; display: block; width: 100%; height: 100%; }
 	
-	section.web div.web_desc_wrap h2.web_title { display: block; margin-bottom: 26.5vh; }
-	section.web div.web_desc_wrap div.pro_btn { margin-bottom: 1.5vh; }
+	section.web div.web_desc_wrap h2.web_title { display: block; margin-bottom: 26vh; }
+	section.web div.web_desc_wrap div.pro_btn button { color: #000; }
 	section.web div.web_desc_wrap div.pro_btn button + button { margin-left: 1vw; }
 	section.web div.web_desc_wrap div.pro_btn button.active { font-weight: bold; }
 	section.web div.web_desc_wrap div.pro_btn button:hover { font-weight: bold; }
 
-	section.web div.web_desc_wrap div.web_desc { position: relative; }
+	section.web div.web_desc_wrap div.web_desc { position: absolute; bottom: 0; display: block; }
 	section.web div.web_desc_wrap div.web_desc .web_pro { position: absolute; display: none; width: 82%; height: 98%; background: #fff; }
 	section.web div.web_desc_wrap div.web_desc .web_pro:nth-of-type(1) { display: block; }
 
-	section.web div.web_desc_wrap p.web_sub_title { margin-bottom: 9.11458vh; }
+	section.web div.web_desc_wrap p.web_sub_title { margin-bottom: 8vh; }
 	section.web div.web_desc_wrap p.web_desc_title { font-size: 1.464129vw; margin-bottom: 2.60417vh; }
-	section.web div.web_desc_wrap p.web_desc { margin-bottom: 6.51042vh; }
+	section.web div.web_desc_wrap p.web_desc { margin-bottom: 6vh; }
 	section.web div.web_desc_wrap div.web_btn { margin-bottom: 6.5vh; }
 
 	/* section.web(D_end) */
@@ -344,10 +342,11 @@ img { object-fit: cover; }
 	header div.info_nav { display: inline-flex; flex-direction: column; flex-grow: 1; justify-content: space-evenly; font-family: 'PlayfairDisplay-Medium'; }
 	header div.info_nav > button { position: relative; flex: 33%; padding: 3.90625vw;  border-bottom: 1px solid #555; }
 	header div.info_nav > button:last-child { border: none; }
-	header div.info_nav > button span { position: absolute; bottom: 0; margin-bottom: 3.90625vw; display: inline-block; font-size: 3.125vw; }
-	header div.info_nav button.info_About:hover { background: #db0000; color: #fff; }
-	header div.info_nav button.info_Works:hover { background: #001daf; color: #fff; }
-	header div.info_nav button.info_Detail:hover { background: #ffce00; color: #fff; }
+	header div.info_nav > button span { position: absolute; bottom: 0; margin-bottom: 3.90625vw; display: inline-block; font-size: 3.125vw; color: #000; }
+	header div.info_nav > button:hover span { color: #fff; }
+	header div.info_nav button.info_About:hover { background: #db0000; }
+	header div.info_nav button.info_Works:hover { background: #001daf; }
+	header div.info_nav button.info_Detail:hover { background: #ffce00;  }
 
 
 	/* header(T_end) */
@@ -363,11 +362,12 @@ img { object-fit: cover; }
 	nav ul li.menu { width: 20%; }
 	nav ul li:last-child { border: none; }
 	nav ul li button { display: block; width: 100%; height: 100%; line-height: 12.28vh; text-align: center; }
-	nav ul li button span { font-size: 2.34375vh; }
+	nav ul li button span { font-size: 2.34375vh; color: #000; }
+	nav ul li:hover button span { color: white; }
 
-	nav ul li.About:hover button { background: red; color: white; }
-	nav ul li.Work:hover button { background: #001daf; color: white; }
-	nav ul li.Detail:hover button { background: #ffce00; color: white; }
+	nav ul li.About:hover button { background: red; }
+	nav ul li.Work:hover button { background: #001daf; }
+	nav ul li.Detail:hover button { background: #ffce00; }
 
 
 	/* nav(T_end) */
@@ -431,6 +431,7 @@ img { object-fit: cover; }
 	section.web div.web_desc_wrap h2.web_title { display: block; margin-bottom: 8.5vh; }
 	section.web div.web_desc_wrap div.web_desc { position: absolute; display: block; width: 82%; }
 	section.web div.web_desc_wrap div.pro_btn { margin-bottom: 1.5vh; font-size: 1.82292vw; }
+	section.web div.web_desc_wrap div.pro_btn button { color: #000; }
 	section.web div.web_desc_wrap div.pro_btn button + button { margin-left: 1vw; }
 	section.web div.web_desc_wrap div.pro_btn button.active { font-weight: bold; }
 
@@ -631,7 +632,7 @@ img { object-fit: cover; }
 	section { overflow: hidden; }
 
 
-	div.btn > a { display: inline-block; padding: 0.5em 1.5em; border: 1px solid #222; border-radius: 5px; }
+	div.btn > a { display: inline-block; padding: 0.5em 1.5em; border: 1px solid #222; border-radius: 5px; color: #000; }
 	div.btn > a + a { margin-left: 1em; }
 	div.btn > a:hover { background: #232323; color: #fff; }
 
@@ -652,10 +653,11 @@ img { object-fit: cover; }
 
 	header div.info_nav { display: inline-flex; flex-direction: column; flex-grow: 1; justify-content: space-evenly; font-family: 'PlayfairDisplay-Medium'; }
 	header div.info_nav > button { position: relative; flex: 33%; padding: 3.90625vw;  border-bottom: 1px solid #555; }
-	header div.info_nav > button span { position: absolute; bottom: 0; margin: 2.5vw 3.125vw; display: inline-block; font-size: 5vw; }
-	header div.info_nav button.info_About:hover { background: #db0000; color: #fff; }
-	header div.info_nav button.info_Works:hover { background: #001daf; color: #fff; }
-	header div.info_nav button.info_Detail:hover { background: #ffce00; color: #fff; }
+	header div.info_nav > button span { position: absolute; bottom: 0; margin: 2.5vw 3.125vw; display: inline-block; font-size: 5vw; color: #000; }
+	header div.info_nav > button:hover span { color: #fff; }
+	header div.info_nav button.info_About:hover { background: #db0000; }
+	header div.info_nav button.info_Works:hover { background: #001daf; }
+	header div.info_nav button.info_Detail:hover { background: #ffce00; }
 	header div.info_nav button.info_Detail { border: none; }
 
 
@@ -672,11 +674,12 @@ img { object-fit: cover; }
 	nav ul li.menu { width: 20%; }
 	nav ul li:last-child { border: none; }
 	nav ul li button { overflow: hidden; display: block; width: 100%; height: 100%; line-height: 10vh; text-align: center; }
-	nav ul li button span { font-size: 2.8169vh; }
+	nav ul li button span { font-size: 2.8169vh; color: #000; }
+	nav ul li:hover button span { color: white; }
 
-	nav ul li.About:hover button { background: red; color: white; }
-	nav ul li.Work:hover button { background: #001daf; color: white; }
-	nav ul li.Detail:hover button { background: #ffce00; color: white; }
+	nav ul li.About:hover button { background: red; }
+	nav ul li.Work:hover button { background: #001daf; }
+	nav ul li.Detail:hover button { background: #ffce00; }
 
 
 	/* nav(M_end) */
@@ -739,6 +742,7 @@ img { object-fit: cover; }
 	section.web div.web_desc_wrap h2.web_title { position: relative; top: 10px; display: block; margin-bottom: 2vh; }
 	section.web div.web_desc_wrap div.web_desc { position: absolute; bottom: 8vh; display: block; margin-bottom: 2.3vh; width: 90%; }
 	section.web div.web_desc_wrap div.pro_btn { position: relative; left: 55px; bottom: 22px; display: inline-block; margin-bottom: 1.5vh; font-size: 3.125vw; }
+	section.web div.web_desc_wrap div.pro_btn button { color: #000; }
 	section.web div.web_desc_wrap div.pro_btn button + button { margin-left: 1.8vw; }
 	section.web div.web_desc_wrap div.pro_btn button.active { font-weight: bold; }
 	section.web div.web_desc_wrap p.web_sub_title { margin-bottom: 3.52112vh; }
